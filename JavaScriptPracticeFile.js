@@ -1149,5 +1149,29 @@ const plusOne = digits => {
 // console.log(plusOne([1, 2, 3]));
 // console.log(plusOne([9]));
 
+//Write a Switch Case
+// let userInput = Number(prompt('Input any number between 1 & 5'));
+
+switch (userInput) {
+	case 1:
+		console.log(`Your final score: ${Number(userInput * 2)}`);
+		break;
+	case 2:
+		console.log(`Your final score: ${Number(userInput * 2)}`);
+		break;
+	case 3:
+		console.log(`Your final score: ${Number(userInput * 2)}`);
+		break;
+	case 4:
+		console.log(`Your final score: ${Number(userInput * 2)}`);
+		break;
+	case 5:
+		console.log(`Your final score: ${Number(userInput * 2)}`);
+		break;
+	default:
+		console.log(`out of range`);
+}
+
+// console.log(userInput);
 
 
