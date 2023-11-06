@@ -163,9 +163,15 @@ const convertToCelsius = function (fahrenheitVal) {
 	let toCelsius = ((fahrenheitVal - 32) * 5) / 9;
 	return parseFloat(toCelsius.toFixed(1));//round up to 1 decimal
 };
+convertToCelsius(32);// toEqual(0)
+convertToCelsius(100);// toEqual(37.8)
+convertToCelsius(-100);// toEqual(-73.3)
 
 const convertToFahrenheit = function (celsiusVal) {
     //formula for Fahrenheit
 	let toFahrenheit = (celsiusVal * 1.8) + 32;
 	return parseFloat(toFahrenheit.toFixed(1));//round up to 1 decimal
 };
+convertToFahrenheit(0);// toEqual(32)
+convertToFahrenheit(73.2);// toEqual(163.8)
+convertToFahrenheit(-10);// toEqual(14)
